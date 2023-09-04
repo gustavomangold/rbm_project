@@ -11,7 +11,7 @@ sample_space = np.array([[np.random.random() for x in range(0, vu_size)] for x i
 hidden_units = np.array([1 for x in range(0, hu_size)])
 b, c = np.array([np.random.random() for x in range(0, vu_size)]), np.array([np.random.random() for x in range(0, hu_size)])
 
-#size of the matrix must be 
+#size of the weights matrix must be equal to hidden units x visible units
 W = np.array([[np.random.random() for x in range(0, hu_size)] for x in range(0, vu_size)])
 
 def log_likelihood(dataset):
